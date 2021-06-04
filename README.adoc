@@ -1,0 +1,25 @@
+= Geofence Test Project
+
+This is a minimal test project for Codename One's https://www.codenameone.com/javadoc/com/codename1/location/Geofence.html[Geofence support].  The app includes a single button "Add Geofence" which will add a geofence at the current location.
+
+Upon adding the Geofence, you should see a dialog saying "Thanks for arriving".
+
+The geofence radius is 100m.  If you walk drive more that, and then go "back" into the radius, you should see a message saying "Thanks for arriving again."
+
+== Files:
+
+link:common/src/main/java/ca/weblite/tests/geofence/GeofenceTest.java[GeofenceTest.java]::
+The main Application.
+
+link:common/src/main/java/ca/weblite/tests/geofence/GeofenceTest.java[GeofenceListenerImpl.java]::
+The Geofence Listener, which handles Geofence events.
+
+== Running the Project
+
+This project is a maven project which was generated using by https://start.codenameone.com[Codename One initializr].  For a tutorial on working with this project structure see https://shannah.github.io/cn1-maven-archetypes/cn1app-archetype-tutorial/getting-started.html[the getting started tutorial].
+
+The short version:  Open the project in IntelliJ, and press "Run" on the toolbar.  It will run the project in the Codename One simulator.
+
+== Help and Support
+
+See the https://www.codenameone.com[Codename One Web Site].
